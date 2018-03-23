@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(https://static.pexels.com/photos/707552/pexels-photo-707552.jpeg) no-repeat;
+    background: url(https://static.pexels.com/photos/707552/pexels-photo-707552.jpeg) no-repeat ;
     background-size: cover;
 }
 
 .box {
-    width: 450px;
+    width: 45%;
     background: rgba(0, 0, 0, 0.4);
     padding: 40px;
     text-align: center;
@@ -18,8 +18,8 @@ body {
 
 .box-img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: 60%;
 }
 
 .bo h1{
