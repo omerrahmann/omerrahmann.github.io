@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    text-decoration-style: none;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+a.active {
+    color: brown;
+}
