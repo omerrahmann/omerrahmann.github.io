@@ -59,3 +59,21 @@ ul {
 .box li a:hover {
     color: #b9b9b9;
 }
+
+@media (min-device-width:600px) {
+    .box {
+        width: 80%;
+    }
+}
+
+@media (min-device-width:800px) {
+    .box {
+        width: 80%;
+    }
+}
+
+@media (min-device-width:1440px) {
+    .box {
+        width: 80%;
+    }
+}
