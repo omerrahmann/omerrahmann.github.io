@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat ;
+    background: url(../assets/bg.jpg) no-repeat ;
     background-size: cover;
 }
 
@@ -58,6 +58,18 @@ ul {
 
 .box li a:hover {
     color: #b9b9b9;
+}
+
+/* Active Link */
+
+.active {
+    color: #ed634e;
+}
+
+/* Media Icons */
+
+.media ul li a i {
+    color: #ed634e;
 }
 
 @media (min-device-width:600px) {

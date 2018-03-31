@@ -1,15 +1,37 @@
 html, body {
-    padding: 0;
     margin: 0;
+    padding: 0;
     width: 100%;
+}
+
+body {
+    font-family: Quicksand;
 }
 
 header {
     width: 100%;
+    height: 100vh;
+    background: url(../assets/bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/* Active link */
+
+.active {
+    color:#ed634e;
+}
+
+/* Landing Page */
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
 }
 
 #logo {
-    margin-top: -10px;
+    margin: -10px;
     height: 50px;
     width: 50px;
 }
@@ -23,8 +45,29 @@ header {
     font-size: 24px;
 }
 
+/* Content Left */
+
+.left {
+    text-align: left;
+    width: 50%;
+}
+
+/* Content right */
+
+.right {
+    text-align: right;
+    width: -50%;
+    position: right;
+}
+
+
+.subhead {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    Color: #ed634e;
+}
+
+/* Navigation Menu */
 nav {
-    top: 0;
     position: fixed;
     width: 100%;
 }
@@ -46,11 +89,11 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 20px; 
 }
 
 nav ul li a {
-    margin: 5px; 
+    margin: 5px;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -67,6 +110,8 @@ nav ul li a {
     display: none;
 }
 
+
+/* for Mobile Devices */
 @media(max-width: 580px) {
     .logo {
         position: fixed;
