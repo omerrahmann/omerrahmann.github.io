@@ -24,7 +24,7 @@ header {
 /* Landing Page */
 .content {
     width: 90%;
-    margin: 3em;
+    margin: 4em auto;
     font-size: 20px;
     line-height: 30px;
     text-align: justify;
