@@ -131,7 +131,7 @@ nav ul li a {
 
 
 /* for Mobile Devices */
-@media(max-width: 580px) {
+@media(max-width: 480px) {
     .logo {
         position: fixed;
         margin-top: -62px;
@@ -172,33 +172,38 @@ nav ul li a {
         grid-row: 1;
         text-align: center;
         padding: 20px;
-        
+        overflow: hidden;
     }
     .firstImg{
         grid-column: 1;
         grid-row: 2;
         margin: auto;
+        overflow: hidden;
     }
     .second{
         grid-column: 1;
         grid-row: 3;
         text-align: center;
         padding: 20px;
+        overflow: hidden;
     }
     .secondImg{
         grid-column: 1;
         grid-row: 4;
         margin: auto;
+        overflow: hidden;
     }
     .third{
         grid-column: 1;
         grid-row: 5;
         text-align: center;
         padding: 20px;
+        overflow: hidden;
     }
     .thirdImg{
         grid-column: 1;
         grid-row: 6;
         margin: auto;
+        overflow: hidden;
     }   
 }
