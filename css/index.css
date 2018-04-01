@@ -24,46 +24,60 @@ header {
 /* Landing Page */
 .content {
     width: 90%;
-    margin: 4em auto;
+    margin: 3em;
     font-size: 20px;
     line-height: 30px;
     text-align: justify;
 }
 
 #logo {
-    margin: -10px;
+    margin: 5px 5px 5px 20px;
     height: 50px;
     width: 50px;
-}
-
-.logo {
     position: fixed;
-    float: left;
-    margin: 16px 36px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
 }
 
-/* Content Left */
+/* Grid Content */
 
-.left {
-    text-align: left;
-    width: 50%;
+.content{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-gap: 1em;
 }
 
-/* Content right */
-
-.right {
-    text-align: right;
-    width: -50%;
-    position: right;
+.first{
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: center;
+    padding: 20px;
+    
 }
-
-
-.subhead {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    Color: #ed634e;
+.firstImg{
+    grid-column: 2/-1;
+    grid-row: 1;
+    margin: auto;
+}
+.second{
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+    padding: 20px;
+}
+.secondImg{
+    grid-column: 2/-1;
+    grid-row: 2;
+    margin: auto;
+}
+.third{
+    grid-column: 1/2;
+    grid-row: 3;
+    text-align: center;
+    padding: 20px;
+}
+.thirdImg{
+    grid-column: 2/-1;
+    grid-row: 3;
+    margin: auto;
 }
 
 /* Navigation Menu */
@@ -110,13 +124,17 @@ nav ul li a {
     display: none;
 }
 
+.subhead a {
+    text-decoration: none;
+    color: #ed634e;
+}
+
 
 /* for Mobile Devices */
 @media(max-width: 580px) {
     .logo {
         position: fixed;
-        top: 0;
-        margin-top: 16px;
+        margin-top: -62px;
     }
 
     nav ul {
@@ -140,6 +158,47 @@ nav ul li a {
     }
 
     .menu-icon {
-        display: block;;
+        display: block;
     }
+
+    /* Grid Content */
+    .content {
+        display: grid;
+        grid-template: repeat(6, 1fr);
+    }
+
+    .first{
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        padding: 20px;
+        
+    }
+    .firstImg{
+        grid-column: 1;
+        grid-row: 2;
+        margin: auto;
+    }
+    .second{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        padding: 20px;
+    }
+    .secondImg{
+        grid-column: 1;
+        grid-row: 4;
+        margin: auto;
+    }
+    .third{
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+        padding: 20px;
+    }
+    .thirdImg{
+        grid-column: 1;
+        grid-row: 6;
+        margin: auto;
+    }   
 }
