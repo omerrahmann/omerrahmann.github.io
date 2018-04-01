@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(https://static.pexels.com/photos/707552/pexels-photo-707552.jpeg) no-repeat ;
+    background: url(https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat ;
     background-size: cover;
 }
 
@@ -11,7 +11,7 @@ body {
     padding: 40px;
     text-align: center;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 9.7%;
     color: white;
     font-family: 'Century Gothic', sans-serif;
 }
