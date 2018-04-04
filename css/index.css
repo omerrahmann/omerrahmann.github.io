@@ -43,43 +43,36 @@ header {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     grid-gap: 1em;
+    grid-template-areas: 
+        "text1 img1"
+        "text2 img2"
+        "text3 img3"
+        ;
 }
 
 .first{
-    grid-column: 1/2;
-    grid-row: 1;
-    text-align: center;
-    padding: 20px;
-    
+    grid-area: text1;
 }
 .firstImg{
-    grid-column: 2/-1;
-    grid-row: 1;
-    margin: auto;
+    grid-area: img1;
 }
 .second{
-    grid-column: 1/2;
-    grid-row: 2;
-    text-align: center;
-    padding: 20px;
+    grid-area:  text2;;
 }
 .secondImg{
-    grid-column: 2/-1;
-    grid-row: 2;
-    margin: auto;
+    grid-area: img2;
 }
 .third{
-    grid-column: 1/2;
-    grid-row: 3;
-    text-align: center;
-    padding: 20px;
+    grid-area: text3;
 }
 .thirdImg{
-    grid-column: 2/-1;
-    grid-row: 3;
-    margin: auto;
+    grid-area: img3
 }
 
+.grid-item {
+    margin: auto;
+    text-align: center;
+}
 /* Navigation Menu */
 nav {
     position: fixed;
@@ -131,7 +124,7 @@ nav ul li a {
 
 
 /* for Mobile Devices */
-@media(max-width: 480px) {
+@media screen and (max-width: 580px) {
     .logo {
         position: fixed;
         margin-top: -62px;
@@ -164,46 +157,14 @@ nav ul li a {
     /* Grid Content */
     .content {
         display: grid;
-        grid-template: repeat(6, 1fr);
-    }
-
-    .first{
-        grid-column: 1;
-        grid-row: 1;
-        text-align: center;
-        padding: 20px;
-        overflow: hidden;
-    }
-    .firstImg{
-        grid-column: 1;
-        grid-row: 2;
-        margin: auto;
-        overflow: hidden;
-    }
-    .second{
-        grid-column: 1;
-        grid-row: 3;
-        text-align: center;
-        padding: 20px;
-        overflow: hidden;
-    }
-    .secondImg{
-        grid-column: 1;
-        grid-row: 4;
-        margin: auto;
-        overflow: hidden;
-    }
-    .third{
-        grid-column: 1;
-        grid-row: 5;
-        text-align: center;
-        padding: 20px;
-        overflow: hidden;
-    }
-    .thirdImg{
-        grid-column: 1;
-        grid-row: 6;
-        margin: auto;
-        overflow: hidden;
-    }   
+        grid-template: repeat(6, 1fr) / 1fr;
+        grid-template-areas: 
+            "text1"
+            "img1"
+            "text2"
+            "img2"
+            "text3"
+            "img3"
+            ;
+    }  
 }
