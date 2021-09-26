@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #0066ff;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -123,6 +123,7 @@ h3 {
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
 }
 
 .section__subtitle--intro,
@@ -175,10 +176,13 @@ header {
 }
 
 .nav__link {
-    color: inherit;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
+}
+
+.nav__link a {
     text-decoration: none;
+    color: inherit;
 }
 
 .nav__link:hover {
@@ -208,6 +212,14 @@ header {
     transform: rotate(.625turn);
 }
 
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
 .hamburger {
     display: block;
     position: relative;
@@ -216,7 +228,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
